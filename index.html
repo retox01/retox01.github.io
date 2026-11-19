@@ -25,9 +25,14 @@
     allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
   <div id="load"><div class="box" id="box"><img src="logo.png" alt=""><b>ExpoStudio</b>Chargement…<br><a href="https://laptop.taild54d50.ts.net/expo/">Ça ne charge pas ? Ouvrir directement</a></div></div>
   <script>
-    var app = document.getElementById('app');
-    app.addEventListener('load', function () { document.getElementById('load').classList.add('gone'); app.focus(); });
-    setTimeout(function () { document.getElementById('box').classList.add('slow'); }, 8000);
+    var DIRECT = 'https://laptop.taild54d50.ts.net/expo/';
+    var app = document.getElementById('app'), ready = false;
+    // L'appli envoie « expostudio-ready » quand elle est chargée dans le cadre
+    window.addEventListener('message', function (e) {
+      if (e.data === 'expostudio-ready' && /\.ts\.net$/.test(new URL(e.origin).hostname)) { ready = true; document.getElementById('load').classList.add('gone'); app.focus(); }
+    });
+    // Sur un appareil Tailscale, le navigateur bloque l'intégration : on ouvre alors l'adresse directe
+    setTimeout(function () { if (!ready) location.replace(DIRECT); }, 7000);
   </script>
 </body>
 </html>
