@@ -17,13 +17,15 @@
   .box b { display: block; margin: 12px 0 6px; color: #ecebf3; font-size: 22px; }
   .box a { color: #a39bd9; font-size: 13px; display: none; margin-top: 14px; }
   .box.slow a { display: inline-block; }
+  .by { position: fixed; top: 14px; right: 18px; font: 600 11px 'Segoe UI', system-ui, sans-serif; letter-spacing: .4px; color: #73718a; }
+  .by b { color: #a39bd9; font-weight: 800; }
 </style>
 </head>
 <body>
   <!-- L'application ExpoStudio tourne sur le serveur maison : elle s'affiche ici en plein écran -->
   <iframe id="app" src="https://laptop.taild54d50.ts.net/expo/" title="ExpoStudio"
     allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
-  <div id="load"><div class="box" id="box"><img src="logo.png" alt=""><b>ExpoStudio</b>Chargement…<br><a href="https://laptop.taild54d50.ts.net/expo/">Ça ne charge pas ? Ouvrir directement</a></div></div>
+  <div id="load"><span class="by">by <b>retox</b></span><div class="box" id="box"><img src="logo.png" alt=""><b>ExpoStudio</b>Chargement…<br><a href="https://laptop.taild54d50.ts.net/expo/">Ça ne charge pas ? Ouvrir directement</a></div></div>
   <script>
     var DIRECT = 'https://laptop.taild54d50.ts.net/expo/';
     var app = document.getElementById('app'), ready = false;
