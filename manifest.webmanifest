@@ -1,0 +1,58 @@
+{
+  "id": "/",
+  "name": "ExpoStudio",
+  "short_name": "ExpoStudio",
+  "description": "Crée gratuitement ton exposé, ton diaporama, ton CV ou ta lettre de motivation : plus de 100 thèmes, export PDF et PowerPoint.",
+  "lang": "fr",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0d0d12",
+  "theme_color": "#0d0d12",
+  "categories": [
+    "education",
+    "productivity"
+  ],
+  "icons": [
+    {
+      "src": "/img/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/img/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/img/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/img/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Nouvel exposé",
+      "short_name": "Exposé",
+      "url": "/",
+      "description": "Créer un exposé"
+    },
+    {
+      "name": "CV et lettre de motivation",
+      "short_name": "CV",
+      "url": "/#cv",
+      "description": "Faire un CV"
+    }
+  ]
+}

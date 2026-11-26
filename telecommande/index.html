@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src https://api.expostudio.fr/s/; style-src https://api.expostudio.fr/s/; img-src 'self' data:; connect-src 'self' https://api.expostudio.fr; base-uri 'none'; form-action 'none'">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#0d0b1c">
+  <title>Télécommande · ExpoStudio</title>
+  <link rel="stylesheet" href="https://api.expostudio.fr/s/telecommande/pad.css" crossorigin>
+  <script defer src="https://api.expostudio.fr/s/telecommande/pad.js" crossorigin></script>
+</head>
+<body>
+  <main id="pad">
+    <header><span class="logo">ExpoStudio</span><span id="st" class="st">Connexion…</span></header>
+    <div class="row"><p id="title" class="title"></p><span id="clock" class="clock" title="Temps de l’oral">00:00</span></div>
+    <div class="count"><button id="prev" type="button" aria-label="Page précédente">‹</button><span id="num">– / –</span><button id="black" type="button" aria-label="Écran noir">◐</button></div>
+    <section id="notes" class="notes" aria-live="polite"></section>
+    <button id="next" class="next" type="button">Page suivante ›</button>
+  </main>
+  <p id="msg" class="msg" hidden></p>
+</body>
+</html>
