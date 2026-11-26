@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /telecharger/ExpoStudio-Setup.exe
+
+Sitemap: https://expostudio.fr/sitemap.xml

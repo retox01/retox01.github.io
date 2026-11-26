@@ -1,0 +1,75 @@
+{
+ "tiers": {
+  "hd": {
+   "poster": "presentation.webp",
+   "list": [
+    {
+     "src": "presentation-av1.mp4",
+     "codec": "av01.0.12M.10",
+     "w": 1920,
+     "h": 1080,
+     "fps": 120,
+     "bps": 3934633
+    },
+    {
+     "src": "presentation-hevc.mp4",
+     "codec": "hvc1.2.4.L150.90",
+     "w": 1920,
+     "h": 1080,
+     "fps": 120,
+     "bps": 4818278
+    },
+    {
+     "src": "presentation.mp4",
+     "codec": "avc1.64002a",
+     "w": 1920,
+     "h": 1080,
+     "fps": 60,
+     "bps": 6188761
+    }
+   ]
+  },
+  "tel": {
+   "poster": "presentation-mobile.webp",
+   "list": [
+    {
+     "src": "presentation-mobile-av1.mp4",
+     "codec": "av01.0.09M.10",
+     "w": 1920,
+     "h": 1080,
+     "fps": 60,
+     "bps": 2515817
+    },
+    {
+     "src": "presentation-mobile-hevc.mp4",
+     "codec": "hvc1.2.4.L123.90",
+     "w": 1920,
+     "h": 1080,
+     "fps": 60,
+     "bps": 3003055
+    },
+    {
+     "src": "presentation-mobile.mp4",
+     "codec": "avc1.640028",
+     "w": 1920,
+     "h": 1080,
+     "fps": 30,
+     "bps": 3828258
+    }
+   ]
+  },
+  "eco": {
+   "poster": "presentation-mobile.webp",
+   "list": [
+    {
+     "src": "presentation-eco.mp4",
+     "codec": "avc1.64001f",
+     "w": 960,
+     "h": 540,
+     "fps": 30,
+     "bps": 790916
+    }
+   ]
+  }
+ }
+}

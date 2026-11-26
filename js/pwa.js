@@ -1,0 +1,1 @@
+if("serviceWorker"in navigator&&location.protocol==="https:"&&location.hostname==="expostudio.fr")window.addEventListener("load",function(){navigator.serviceWorker.register("/sw.js",{scope:"/"}).catch(function(){})});
